@@ -1,0 +1,115 @@
+---
+title: "R for Clinical Psychology"
+subtitle: "⚔<br/> Uses and applications"
+author: "Chris Gaskell"
+institute:
+date: "2016/12/12 (last updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: ["custom.css", "fonts.css", "default", "default-fonts", "hygge", "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"]
+    nature:
+      ratio: 16:9
+      titleSlideClass: ["top", "center"]
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>`
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+
+library(xaringan)
+library(xaringanExtra)
+library(dplyr)
+library(gganimate)
+library(ggExtra)
+library(xaringanthemer)
+library(RColorBrewer)
+library(vembedr)
+
+xaringanExtra::use_editable()
+xaringanExtra::use_panelset()
+xaringanExtra::use_freezeframe()
+xaringanExtra::use_webcam()
+xaringanExtra::use_fit_screen()
+xaringanExtra::use_progress_bar(color = "red", location = "top")
+xaringanExtra::use_tile_view()
+xaringanExtra::use_scribble()
+#xaringanExtra::use_search(show_icon = T, auto_search = F, position = "")
+xaringanExtra::use_logo(image_url = "https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/xaringan.png")
+xaringanExtra::use_share_again()
+```
+
+---
+class: center, top, split-three, inverse
+background-image: url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8dGVjaHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60)
+background-position: cover
+background-size: cover
+---
+class: center, top, split-three, inverse
+background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/1200px-R_logo.svg.png)
+background-position:8% 70%
+background-size: 375px 300px
+
+.column.bg-main1[.content[.right[
+# Contents
+]]]
+
+--
+.column.bg-main2[.content[
+<br><br><br><br>
+.Large[.bold[
+### R
+[What is it](#-slide)
+
+[Why use it](#-slide)
+
+[R markdown](#-slide)
+
+[Applications](#-slide)
+]]]]
+
+--
+
+.column.bg-main3[.content[
+<br><br><br><br>
+.Large[.Bold[
+### Another title
+
+.bold[
+[Another](#-slide)
+
+[Another](#-slide)
+
+<a href="https://sced-for-clinicians.netlify.app/resources/">Resources</a>
+]
+]]]]
+
+--
+
+.footnote[.Large[**Note**: all underlined
+.white[.underline[white]] text are hyperlinks!]
+]
+
+---
+class: center, top,
+background-image:
+background-position: cover
+background-size: cover
+
+# Applications
+
+.left[
+## Shiny applications
+## Slide decks
+## Books
+## Websites
+## Automated Reports
+]
+---
+
