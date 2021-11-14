@@ -75,12 +75,12 @@ a:hover { color: orange;
 .remark-slide-content h1 {
   color:              var(--DarkBlue);
   font-weight:        400;
-  line-height:        1em;
+  line-height:        0.9em;
 }
 
 .remark-slide-content h2 {
   /*font-size:          35px;*/
-  /*font-size:          1.4em;*/
+  font-size:          1.2em;
   font-weight:        400;
   color:              #6ebcf7
   line-height:        1em;

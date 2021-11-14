@@ -76,7 +76,6 @@ name: about-me
 layout: false
 class: about-me-slide, right, middle, center
 
-# About me
 
 <img style="border-radius: 50%;" src="https://pbs.twimg.com/profile_images/1434417640920002563/ZS62zhXl_400x400.jpg" width="150px"/>
 
@@ -91,6 +90,7 @@ class: about-me-slide, right, middle, center
 [`r icons::icon_style(icons::fontawesome("github"), scale = 1)` @chris-gaskell](https://github.com/chris-gaskell)
 
 ---
+exclude: true
 class: center, top, split-three, inverse
 background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/1200px-R_logo.svg.png)
 background-position:8% 70%
@@ -100,7 +100,6 @@ background-size: 375px 300px
 # Contents
 ]]]
 
---
 .column.bg-main2[.content[
 <br><br><br><br>
 .Large[.bold[
@@ -113,8 +112,6 @@ background-size: 375px 300px
 
 [Applications](#-slide)
 ]]]]
-
---
 
 .column.bg-main3[.content[
 <br><br><br><br>
@@ -130,7 +127,6 @@ background-size: 375px 300px
 ]
 ]]]]
 
---
 
 .footnote[.Large[**Note**: all underlined
 .white[.underline[white]] text are hyperlinks!]
@@ -187,12 +183,12 @@ round(3.14159, digits = 2)
 
 ```
 
-R has loads of functions built in.
+.small[R has loads of functions built in.
 
 Also can be user defined.
 
 Groups of functions are held together within package to download.
-]
+]]
 ---
 background-image: url(https://www.mitchelloharawild.com/blog/2018-07-10-hexwall_files/figure-html/final-1.png)
 background-position:50% 95%
