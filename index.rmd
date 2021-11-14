@@ -1,9 +1,9 @@
 ---
-title: "R for Clinical Psychology"
-subtitle: "⚔<br/> Uses and applications"
-author: "Chris Gaskell"
+title: "R for Clinical Psychology: <br> uses and applications"
+subtitle: "A showcase of how data science can help to drive healthcare"
+author:
 institute:
-date: "2016/12/12 (last updated: `r Sys.Date()`)"
+date: "<br><br><br><br>Chris Gaskell<br>20??/??/?? <br>(last updated: `r Sys.Date()`)"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -20,9 +20,38 @@ output:
       highlightLines: true
       countIncrementalSlides: false
 ---
+```{r meta, echo=FALSE}
+library(metathis)
+meta() %>%
+  meta_general(
+    description = "A showcase of R applications for Clinical Psychology: Tools for innovation",
+    generator = "xaringan and remark.js"
+  ) %>% 
+  meta_name("github-repo" = "chris-gaskell/r-for-cp") %>% 
+  meta_social(
+    title = "R for Clinical Psychology",
+    url = "https://chris-gaskell.github.io.r/for-cp/index.html",
+    #image = "",
+    image_alt = paste(
+      "Title slide of R for Clinical Psychology:",
+      "An Introduction to R in Clinical Psychology: Tools for innovation",
+      "Workshop presented by Chris Gaskell"
+      ),
+    og_type = "website",
+    og_author = "Chris Gaskell",
+    twitter_card_type = "summary_large_image",
+    twitter_creator = "@cgaskell92"
+  )
+```
 ```{r setup, include=FALSE}
+library(knitr)
+# set default options
+opts_chunk$set(echo=FALSE,
+               collapse = TRUE,
+               fig.width = 7.252,
+               fig.height = 4,
+               dpi = 300)
 options(htmltools.dir.version = FALSE)
-
 library(xaringan)
 library(xaringanExtra)
 library(dplyr)
@@ -31,7 +60,6 @@ library(ggExtra)
 library(xaringanthemer)
 library(RColorBrewer)
 library(vembedr)
-
 xaringanExtra::use_editable()
 xaringanExtra::use_panelset()
 xaringanExtra::use_freezeframe()
@@ -44,12 +72,24 @@ xaringanExtra::use_scribble()
 xaringanExtra::use_logo(image_url = "https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/xaringan.png")
 xaringanExtra::use_share_again()
 ```
+name: about-me
+layout: false
+class: about-me-slide, right, middle, center
 
----
-class: center, top, split-three, inverse
-background-image: url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8dGVjaHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60)
-background-position: cover
-background-size: cover
+# About me
+
+<img style="border-radius: 50%;" src="https://pbs.twimg.com/profile_images/1434417640920002563/ZS62zhXl_400x400.jpg" width="150px"/>
+
+## Chris Gaskell
+
+### Clinical Psychologist
+
+.fade[Salford Royal NHS Foundation Trust<br>Manchester, UK]
+
+[`r icons::fontawesome("link")` chris-gaskell.com](https://chris-gaskell.com)
+[`r icons::fontawesome("twitter")` @chris-gaskell92](https://twitter.com/chris-gaskell92)
+[`r icons::icon_style(icons::fontawesome("github"), scale = 1)` @chris-gaskell](https://github.com/chris-gaskell)
+
 ---
 class: center, top, split-three, inverse
 background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/1200px-R_logo.svg.png)
@@ -97,11 +137,89 @@ background-size: 375px 300px
 ]
 
 ---
-class: center, top,
-background-image:
-background-position: cover
-background-size: cover
+layout: true
+background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/1200px-R_logo.svg.png)
+background-position:80% 60%
+background-size: 375px 300px
+---
+class: left
+# What is it?
 
+`r icons::fontawesome("laptop-code")` Programming language
+--
+
+`r icons::fontawesome("calculator")` `r icons::fontawesome("chart-area")` Statistical computing and  graphics
+--
+
+`r icons::fontawesome("times")` `r icons::fontawesome("mouse-pointer")` Command line interface (no point & click)
+
+---
+background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/1200px-R_logo.svg.png)
+background-position:80% 60%
+background-size: 375px 300px
+class: left
+# The command line
+
+.pull-left[
+```{r, warning=F, echo = T}
+2+2
+```
+]
+
+---
+# The command line
+
+.pull-left[
+```{r, warning=F, echo = T}
+test = 4+2
+test
+```
+]
+
+---
+# Functions
+
+.pull-left[
+```{r, warning=F, echo = T}
+sqrt(81)
+
+round(3.14159, digits = 2)
+
+```
+
+R has loads of functions built in.
+
+Also can be user defined.
+
+Groups of functions are held together within package to download.
+]
+---
+background-image: url(https://www.mitchelloharawild.com/blog/2018-07-10-hexwall_files/figure-html/final-1.png)
+background-position:50% 95%
+background-size: 100% 80%
+class: center
+# A Universe of Packages
+---
+
+# Reasons to use R
+
++ Statistics
+  + Highest functional capability.
+  + Up to date and bug free.
++ Free
++ Open source
+  + Anyone can contribute
+  + Transparency
+  + Replicability
++ Strong supportive community
++ Literate Programming
++ Share your work and collaborate.
+
+---
+class: center, top,
+background-image: url(https://pbs.twimg.com/media/ESmnwGXWkAEXIot.jpg)
+background-position:80% 70%
+background-size: 350px 475px
 # Applications
 
 .left[
@@ -111,5 +229,108 @@ background-size: cover
 ## Websites
 ## Automated Reports
 ]
----
 
+
+---
+layout: false
+background-image: url(https://blog.efpsa.org/wp-content/uploads/2019/04/pic1.png)
+background-position:80% 60%
+background-size: 300px 375px
+# Applications
+
+.pull-left[
+Making applications that are interactive and reactive
+
+<a href="http://neuro-tests.netlify.app">Neuropsychology Test Catalogue</a>
+]
+
+---
+layout: false
+background-image: url(https://bookdown.org/yihui/blogdown/images/logo.png)
+background-position:80% 60%
+background-size: 300px 375px
+# Websites
+
+.pull-left[
+Making static webistes.
+- Personal-academic websites.
+- Websites for teaching.
+- Hosting resources.
+
+<a href="http://chris-gaskell.com">My own site</a>
+
+<a href="http://sced-for-clinicians.netlify.app">DClinPsy teaching website for SCED</a>
+]
+---
+layout: false
+background-image: url(https://user-images.githubusercontent.com/163582/45438104-ea200600-b67b-11e8-80fa-d9f2a99a03b0.png)
+background-position:80% 60%
+background-size: 300px 375px
+# Presentations
+
+.pull-left[
+- A better alternative to PowerPoint.
+- HTML = lightweight and easy to share.
+
+<a href="http://fnd-for-paramedics.netlify.app">Some teaching I have done</a>
+
+<a href="http://chris-gaskell.github.io/uos-sced/day-one/index.html">And some more</a>
+]
+
+???
+- Search 
+- Embed videos, gifs and tweets
+- Use statistical and graphical outputs from R 
+
+---
+background-image: url(https://user-images.githubusercontent.com/163582/45438104-ea200600-b67b-11e8-80fa-d9f2a99a03b0.png)
+background-position:80% 60%
+background-size: 300px 375px
+# Embed Tweets
+
+.pull-left[
+```{r echo=F}
+tweetrmd::tweet_embed(tweetrmd::tweet_url("chrisgaskell92", "1422124260844138501"), theme = "light", maxwidth = 700)
+```
+]
+
+---
+background-image: url(https://media2.giphy.com/media/dZWNQfCMEgGwibKHTd/200w.gif?cid=ecf05e47ubgh66swqdtcdpu0nzjs0ucw1l0ljvlz3wl8oh8b&rid=200w.gif&ct=g)
+background-position:80% 68%
+background-size: 400px 300px
+# Embed Videos & Gifs
+
+.pull-left[
+<br>`r embed_youtube("Dy3XLo7dVQI", width = 400, height = 300) %>% use_start_time("0m04s")`
+]
+
+
+---
+layout: false
+background-image: url(https://bookdown.org/yihui/bookdown/images/logo.png)
+background-position:80% 60%
+background-size: 300px 375px
+# Books
+
+.pull-left[
+- Books that are interactive, professional and interactive.
+- Able to output to html, msword or pdf.
+- Protocols and manuals?
+
+<a href="https://bookdown.org/yihui/bookdown/">The Bookdown example</a>
+
+<a href="https://nead-gsh.netlify.app">An example book I made earlier for work</a>
+]
+
+???
+- Looks just like an online book.
+- Sidebar contents table
+- Search function
+- Embded images, videos, tweets, downloadable files. 
+
+---
+layout: false
+background-image: url(https://i.pinimg.com/originals/d6/4f/60/d64f60c95354b0ae5fb447ff942eb20b.png)
+background-position:80% 60%
+background-size: 300px 375px
+# Academic Posters
