@@ -265,20 +265,19 @@ background-size: cover;
 }
 /*-- Headings --*/
 .title-slide h1 {
-  font-size:          3.0em;
+  font-size:          2.0em;
   font-weight:        600;
   color:              white;
 }
 .title-slide h2 {
-  font-size:          2em;
+  font-size:          1.0em;
   font-weight:        600;
   color:              white;
-  font-size:          1em;
 }
 
 .title-slide h3 {
   color:              white;
-  font-size:          1.5em;
+  font-size:          1.0em;
 }
 
 /*-- Custom class for the about-me slide --*/

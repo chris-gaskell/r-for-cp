@@ -1,9 +1,9 @@
 ---
-title: "R for Clinical Psychology: <br> uses and applications"
-subtitle: "A showcase of how data science can help to drive healthcare"
+title: "R for Clinical Psychology: <br> Overview and applications"
+subtitle: "A showcase of how data science can help to drive digital healthcare"
 author:
 institute:
-date: "<br><br><br><br>Chris Gaskell<br>20??/??/?? <br>(last updated: `r Sys.Date()`)"
+date: "<br><br><br><br><br><br>Dr. Chris Gaskell<br>Clinical Psychologist<br>2021/19/12 (last updated: `r Sys.Date()`)"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -75,19 +75,24 @@ xaringanExtra::use_share_again()
 name: about-me
 layout: false
 class: about-me-slide, right, middle, center
+background-image: url(img/salford.jpg)
+background-position:0% 50%
+background-size: 375px 100%
 
 
-<img style="border-radius: 50%;" src="https://pbs.twimg.com/profile_images/1434417640920002563/ZS62zhXl_400x400.jpg" width="150px"/>
+<img style="border-radius: 50%;" src="https://pbs.twimg.com/profile_images/1434417640920002563/ZS62zhXl_400x400.jpg" width="200px"/>
 
 ## Chris Gaskell
 
-### Clinical Psychologist
+## Clinical Psychologist
 
-.fade[Salford Royal NHS Foundation Trust<br>Manchester, UK]
+.fade[Non-Epileptic Attack Disorder Service<br>Northern Care Alliance NHS Foundation Trust<br>Manchester, UK]
 
+.small[
 [`r icons::fontawesome("link")` chris-gaskell.com](https://chris-gaskell.com)
 [`r icons::fontawesome("twitter")` @chris-gaskell92](https://twitter.com/chris-gaskell92)
 [`r icons::icon_style(icons::fontawesome("github"), scale = 1)` @chris-gaskell](https://github.com/chris-gaskell)
+]
 
 ---
 exclude: true
@@ -135,10 +140,11 @@ background-size: 375px 300px
 ---
 layout: true
 background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/1200px-R_logo.svg.png)
-background-position:80% 60%
-background-size: 375px 300px
+background-position:90% 10%
+background-size: 175px 120px
 ---
 class: left
+
 # What is it?
 
 `r icons::fontawesome("laptop-code")` Programming language
@@ -150,9 +156,9 @@ class: left
 `r icons::fontawesome("times")` `r icons::fontawesome("mouse-pointer")` Command line interface (no point & click)
 
 ---
-background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/1200px-R_logo.svg.png)
-background-position:80% 60%
-background-size: 375px 300px
+background-image: url(https://community.rstudio.com/uploads/default/original/2X/5/5f5367a9ede35b2ae26f62c9ccbb98ac279d4d34.gif)
+background-position: 100% 50%
+background-size: 300px 700px
 class: left
 # The command line
 
@@ -187,8 +193,14 @@ round(3.14159, digits = 2)
 
 Also can be user defined.
 
-Groups of functions are held together within package to download.
+Groups of functions are held together within packages.
 ]]
+
+???
+- Infinate number of functions.
+- Not all about maths and stats.
+- Packages for stats, for communicating information.
+
 ---
 background-image: url(https://www.mitchelloharawild.com/blog/2018-07-10-hexwall_files/figure-html/final-1.png)
 background-position:50% 95%
@@ -196,12 +208,32 @@ background-size: 100% 80%
 class: center
 # A Universe of Packages
 ---
+# Traditional research workflow
 
+1. Dats stored in MS Excel <br>
+2. Get it into SPSS <br>
+3. Run some analayses <br>
+4. Extract results? (pray they are done right) <br>
+5. Write up in MS Word
+
+Any problems with this?
+
+--
+
+lack of integration?
+easy of refinemenet?
+transparency and reproducability?
+time to go back and repeat steps? limited functionality and flexibility?
+
+R goes past this with literatre programming. Inregrated way to build reports.
+
+---
 # Reasons to use R
 
 + Statistics
   + Highest functional capability.
   + Up to date and bug free.
++ .red[Sharing information]
 + Free
 + Open source
   + Anyone can contribute
@@ -210,6 +242,98 @@ class: center
 + Strong supportive community
 + Literate Programming
 + Share your work and collaborate.
+
+???
+- Markdown is an accessible mark up language.
+
+---
+background-image: url(img/r-workflow.png)
+background-position:90% 50%
+background-size: 35% 85%
+
+# R Markdown workflow
+
+.pull-left[
+- R offers a very different workflow.
+- Write the results the data is being analysed then hit run the report. If the data changes then the report will change too.
+- HTML is where it gets interesting.
+
+.footnote[.left[can all be shared using GitHub `r icons::fontawesome("github-square")`]]
+]
+
+???
+- Don't need to know much html or css. R Markdown is a simple markup language that can handle them both but requires little of either. Packages also do a lot of the work for us.
+
+---
+background-image: url(img/gsh.png), url(img/teletherapy.jpg)
+background-position:20% 70%, 80% 70%
+background-size: 450px 300px, 450px 300px
+
+# Is the product of psychological therapy changing?
+
+???
+
+- Delivery methods are changing
+- Bigger role of different intervention formats
+- Quality of resources are still terrible
+
+---
+
+# Applications of R to digital healthcare
+
+- There is a need for improving how we share information.
+- greater quality of information.
+- products, resources, worksheets, teaching slides that people *actually* want to use.
+
+- R is a good fit because it can produce good quality html products without the need to be an expert in html
+
+---
+background-image: url(https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)
+background-size: cover
+
+---
+background-image: url(https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)
+background-size: cover
+
+---
+background-image: url(https://images.unsplash.com/photo-1511884642898-4c92249e20b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)
+background-size: cover
+
+---
+background-image: url(https://user-images.githubusercontent.com/163582/45438104-ea200600-b67b-11e8-80fa-d9f2a99a03b0.png)
+background-position:80% 60%
+background-size: 300px 375px
+# Embed Tweets
+
+.pull-left[
+```{r echo=F}
+tweetrmd::tweet_embed(tweetrmd::tweet_url("chrisgaskell92", "1422124260844138501"), theme = "light", maxwidth = 700)
+```
+]
+
+---
+background-image: url(https://media2.giphy.com/media/dZWNQfCMEgGwibKHTd/200w.gif?cid=ecf05e47ubgh66swqdtcdpu0nzjs0ucw1l0ljvlz3wl8oh8b&rid=200w.gif&ct=g)
+background-position:90% 68%
+background-size: 550px 475px
+# Embed Videos & Gifs
+
+.pull-left[
+`r embed_youtube("Dy3XLo7dVQI", width = 400, height = 450) %>% use_start_time("0m04s")`
+]
+
+---
+background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPztLhdWyflhRN2oWtTcaed0ogJHi13LGLAA&usqp=CAU), url(https://boostlabs.com/wp-content/uploads/2019/09/10-types-of-data-visualization-1.jpg)
+background-position:10% 70%, 90% 70%
+background-size: 470px 350px, 470px 350px
+
+# Great data visualization!
+
+---
+background-image: url(http://blog.revolutionanalytics.com/downloads/datasaurus.gif), url(https://miro.medium.com/max/1400/1*t1dFLWRii-oeKSY_DbuU9A.gif)
+background-position:10% 70%, 90% 70%
+background-size: 470px 350px, 470px 350px
+
+# Which can even me animated
 
 ---
 class: center, top,
@@ -220,12 +344,33 @@ background-size: 350px 475px
 
 .left[
 ## Shiny applications
-## Slide decks
+## Presentations
 ## Books
 ## Websites
 ## Automated Reports
 ]
 
+---
+layout: false
+background-image: url(https://user-images.githubusercontent.com/163582/45438104-ea200600-b67b-11e8-80fa-d9f2a99a03b0.png)
+background-position:80% 60%
+background-size: 300px 375px
+# Presentations
+
+.pull-left[
+- Lightweight (embed videos, gifs, large images).
+- No need to send files - host online. www.r-for-cp.netlify.app
+
+
+<a href="http://fnd-for-paramedics.netlify.app">Some teaching I have done</a>
+
+<a href="http://chris-gaskell.github.io/uos-sced/day-one/index.html">And some more</a>
+]
+
+???
+- Search 
+- Embed videos, gifs and tweets
+- Use statistical and graphical outputs from R 
 
 ---
 layout: false
@@ -237,8 +382,13 @@ background-size: 300px 375px
 .pull-left[
 Making applications that are interactive and reactive
 
-<a href="http://neuro-tests.netlify.app">Neuropsychology Test Catalogue</a>
+- <a href="http://neuro-tests.netlify.app">Neuropsychology Test Catalogue</a>
+
+- <a href="https://shiny.rstudio.com/gallery/">Gallery of applications</a>
+
+- <a href="https://www.rstudio.com/blog/winners-of-the-2020-rstudio-table-contest/">Great looking data tables</a>
 ]
+
 
 ---
 layout: false
@@ -256,48 +406,6 @@ Making static webistes.
 <a href="http://chris-gaskell.com">My own site</a>
 
 <a href="http://sced-for-clinicians.netlify.app">DClinPsy teaching website for SCED</a>
-]
----
-layout: false
-background-image: url(https://user-images.githubusercontent.com/163582/45438104-ea200600-b67b-11e8-80fa-d9f2a99a03b0.png)
-background-position:80% 60%
-background-size: 300px 375px
-# Presentations
-
-.pull-left[
-- A better alternative to PowerPoint.
-- HTML = lightweight and easy to share.
-
-<a href="http://fnd-for-paramedics.netlify.app">Some teaching I have done</a>
-
-<a href="http://chris-gaskell.github.io/uos-sced/day-one/index.html">And some more</a>
-]
-
-???
-- Search 
-- Embed videos, gifs and tweets
-- Use statistical and graphical outputs from R 
-
----
-background-image: url(https://user-images.githubusercontent.com/163582/45438104-ea200600-b67b-11e8-80fa-d9f2a99a03b0.png)
-background-position:80% 60%
-background-size: 300px 375px
-# Embed Tweets
-
-.pull-left[
-```{r echo=F}
-tweetrmd::tweet_embed(tweetrmd::tweet_url("chrisgaskell92", "1422124260844138501"), theme = "light", maxwidth = 700)
-```
-]
-
----
-background-image: url(https://media2.giphy.com/media/dZWNQfCMEgGwibKHTd/200w.gif?cid=ecf05e47ubgh66swqdtcdpu0nzjs0ucw1l0ljvlz3wl8oh8b&rid=200w.gif&ct=g)
-background-position:80% 68%
-background-size: 400px 300px
-# Embed Videos & Gifs
-
-.pull-left[
-<br>`r embed_youtube("Dy3XLo7dVQI", width = 400, height = 300) %>% use_start_time("0m04s")`
 ]
 
 
