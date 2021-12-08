@@ -337,16 +337,13 @@ background-image: url(https://images.unsplash.com/photo-1511884642898-4c92249e20
 background-size: cover
 
 ---
-background-image: url(https://user-images.githubusercontent.com/163582/45438104-ea200600-b67b-11e8-80fa-d9f2a99a03b0.png)
-background-position:80% 60%
-background-size: 300px 375px
+layout: false
 # Embed Tweets
 
-.pull-left[
 ```{r echo=F}
 tweetrmd::tweet_embed(tweetrmd::tweet_url("chrisgaskell92", "1466732253304832004"), theme = "light", maxwidth = 700)
 ```
-]
+
 
 ---
 background-image: url(https://media2.giphy.com/media/dZWNQfCMEgGwibKHTd/200w.gif?cid=ecf05e47ubgh66swqdtcdpu0nzjs0ucw1l0ljvlz3wl8oh8b&rid=200w.gif&ct=g)
