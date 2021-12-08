@@ -24,7 +24,7 @@
     <meta property="og:type" content="website"/>
     <meta property="og:locale" content="en_US"/>
     <meta property="article:author" content="Chris Gaskell"/>
-    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"c11b62b1620c444ba19051c762da14ab","expires":14}</script>
+    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"x3f99bba2eac419ea5fbb48b8bf51844","expires":14}</script>
     <script src="libs/himalaya/himalaya.js"></script>
     <script src="libs/js-cookie/js.cookie.js"></script>
     <link href="libs/editable/editable.css" rel="stylesheet" />
@@ -60,8 +60,8 @@
 class: top, center, title-slide
 
 # R for Clinical Psychology: <br> Overview and applications
-## A showcase of how data science can help to drive digital healthcare
-### <br><br><br><br><br><br>Dr. Chris Gaskell<br>Clinical Psychologist<br>2021/19/12 (last updated: 2021-12-07)
+## A showcase of how data science can help to develop health products
+### <br><br><br><br><br><br>Dr. Chris Gaskell<br>Clinical Psychologist<br>2021/12/19 (last updated: 2021-12-08)
 
 ---
 
@@ -71,8 +71,8 @@ name: about-me
 layout: false
 class: about-me-slide, right, middle, center
 background-image: url(img/salford.jpg)
-background-position:0% 50%
-background-size: 375px 100%
+background-position:-5% 50%
+background-size: 425px 100%
 
 
 &lt;img style="border-radius: 50%;" src="https://pbs.twimg.com/profile_images/1434417640920002563/ZS62zhXl_400x400.jpg" width="200px"/&gt;
@@ -211,24 +211,34 @@ class: center
 ---
 # Traditional research workflow
 
+.small[
 1. Dats stored in MS Excel &lt;br&gt;
 2. Get it into SPSS &lt;br&gt;
 3. Run some analayses &lt;br&gt;
 4. Extract results? (pray they are done right) &lt;br&gt;
 5. Write up in MS Word
+]
 
 Any problems with this?
-
 --
 
+.small[
 lack of integration?
-easy of refinemenet?
-transparency and reproducability?
-time to go back and repeat steps? limited functionality and flexibility?
+difficult to refine? &lt;br&gt;
+transparency and reproducability? &lt;br&gt;
+The time it takes to go back and repeat steps? &lt;br&gt;
+limited functionality and flexibility?
+]
+
+???
 
 R goes past this with literatre programming. Inregrated way to build reports.
 
 ---
+background-image: url(img/dont-use-spss.jpg)
+background-position:90% 50%
+background-size: 33% 35%
+
 # Reasons to use R
 
 + Statistics
@@ -256,7 +266,7 @@ background-size: 35% 85%
 
 .pull-left[
 - R offers a very different workflow.
-- Write the results the data is being analysed then hit run the report. If the data changes then the report will change too.
+- Write the results as the data is being analysed then hit run the report. If the data changes then the report will change too.
 - HTML is where it gets interesting.
 
 .footnote[.left[can all be shared using GitHub &lt;svg viewBox="0 0 448 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM277.3 415.7c-8.4 1.5-11.5-3.7-11.5-8 0-5.4.2-33 .2-55.3 0-15.6-5.2-25.5-11.3-30.7 37-4.1 76-9.2 76-73.1 0-18.2-6.5-27.3-17.1-39 1.7-4.3 7.4-22-1.7-45-13.9-4.3-45.7 17.9-45.7 17.9-13.2-3.7-27.5-5.6-41.6-5.6-14.1 0-28.4 1.9-41.6 5.6 0 0-31.8-22.2-45.7-17.9-9.1 22.9-3.5 40.6-1.7 45-10.6 11.7-15.6 20.8-15.6 39 0 63.6 37.3 69 74.3 73.1-4.8 4.3-9.1 11.7-10.6 22.3-9.5 4.3-33.8 11.7-48.3-13.9-9.1-15.8-25.5-17.1-25.5-17.1-16.2-.2-1.1 10.2-1.1 10.2 10.8 5 18.4 24.2 18.4 24.2 9.7 29.7 56.1 19.7 56.1 19.7 0 13.9.2 36.5.2 40.6 0 4.3-3 9.5-11.5 8-66-22.1-112.2-84.9-112.2-158.3 0-91.8 70.2-161.5 162-161.5S388 165.6 388 257.4c.1 73.4-44.7 136.3-110.7 158.3zm-98.1-61.1c-1.9.4-3.7-.4-3.9-1.7-.2-1.5 1.1-2.8 3-3.2 1.9-.2 3.7.6 3.9 1.9.3 1.3-1 2.6-3 3zm-9.5-.9c0 1.3-1.5 2.4-3.5 2.4-2.2.2-3.7-.9-3.7-2.4 0-1.3 1.5-2.4 3.5-2.4 1.9-.2 3.7.9 3.7 2.4zm-13.7-1.1c-.4 1.3-2.4 1.9-4.1 1.3-1.9-.4-3.2-1.9-2.8-3.2.4-1.3 2.4-1.9 4.1-1.5 2 .6 3.3 2.1 2.8 3.4zm-12.3-5.4c-.9 1.1-2.8.9-4.3-.6-1.5-1.3-1.9-3.2-.9-4.1.9-1.1 2.8-.9 4.3.6 1.3 1.3 1.8 3.3.9 4.1zm-9.1-9.1c-.9.6-2.6 0-3.7-1.5s-1.1-3.2 0-3.9c1.1-.9 2.8-.2 3.7 1.3 1.1 1.5 1.1 3.3 0 4.1zm-6.5-9.7c-.9.9-2.4.4-3.5-.6-1.1-1.3-1.3-2.8-.4-3.5.9-.9 2.4-.4 3.5.6 1.1 1.3 1.3 2.8.4 3.5zm-6.7-7.4c-.4.9-1.7 1.1-2.8.4-1.3-.6-1.9-1.7-1.5-2.6.4-.6 1.5-.9 2.8-.4 1.3.7 1.9 1.8 1.5 2.6z"&gt;&lt;/path&gt;&lt;/svg&gt;]]
@@ -283,9 +293,10 @@ background-size: 450px 300px, 450px 300px
 # Applications of R to digital healthcare
 
 - There is a need for improving how we share information.
-- greater quality of information.
-- products, resources, worksheets, teaching slides that people *actually* want to use.
 
+- greater quality of information.
+
+- Data products, resources, worksheets, teaching slides that people *actually* want to use.
 - R is a good fit because it can produce good quality html products without the need to be an expert in html
 
 ---
@@ -347,10 +358,10 @@ background-size: 350px 475px
 # Applications
 
 .left[
-## Shiny applications
 ## Presentations
 ## Books
 ## Websites
+## Shiny applications
 ## Automated Reports
 ]
 
@@ -363,18 +374,62 @@ background-size: 300px 375px
 
 .pull-left[
 - Lightweight (embed videos, gifs, large images).
-- No need to send files - host online. www.r-for-cp.netlify.app
+- No need to send files - host online.&lt;br&gt;
+&lt;a href="www.r-for-cp.netlify.app"&gt;www.r-for-cp.netlify.app&lt;/a&gt;
 
 
-&lt;a href="http://fnd-for-paramedics.netlify.app"&gt;Some teaching I have done&lt;/a&gt;
+&lt;a href="http://fnd-for-paramedics.netlify.app"&gt;Some clinical teaching I have delivered about dissociative seizures.&lt;/a&gt;
 
-&lt;a href="http://chris-gaskell.github.io/uos-sced/day-one/index.html"&gt;And some more&lt;/a&gt;
+&lt;a href="http://chris-gaskell.github.io/uos-sced/day-one/index.html"&gt;Some academic teaching I have delivered about on conducting practice based research&lt;/a&gt;
 ]
 
 ???
-- Search 
-- Embed videos, gifs and tweets
-- Use statistical and graphical outputs from R 
+- Scribble.
+- Webcam.
+- Panelset.
+
+---
+layout: false
+background-image: url(https://bookdown.org/yihui/blogdown/images/logo.png)
+background-position:80% 60%
+background-size: 300px 375px
+# Websites
+
+.pull-left[
+Making static webistes.
+- Personal-academic websites.
+- Websites for teaching staff and students.
+- Hosting resources.
+
+&lt;a href="http://chris-gaskell.com"&gt;My personal site&lt;/a&gt;
+
+&lt;a href="http://sced-for-clinicians.netlify.app"&gt;Teaching workshop website&lt;/a&gt;
+]
+
+
+---
+layout: false
+background-image: url(https://bookdown.org/yihui/bookdown/images/logo.png)
+background-position:80% 60%
+background-size: 300px 375px
+# Books
+
+.pull-left[
+- Books that are polished, professional and interactive.
+- Able to output to html, msword or pdf.
+- Protocols and treatment manuals.
+- Patient resources.
+
+&lt;a href="https://bookdown.org/yihui/bookdown/"&gt;The Bookdown example&lt;/a&gt;
+
+&lt;a href="https://nead-gsh.netlify.app"&gt;An example book I made earlier for work&lt;/a&gt;
+]
+
+???
+- Looks just like an online book.
+- Sidebar contents table
+- Search function
+- Embded images, videos, tweets, downloadable files. 
 
 ---
 layout: false
@@ -393,48 +448,6 @@ Making applications that are interactive and reactive
 - &lt;a href="https://www.rstudio.com/blog/winners-of-the-2020-rstudio-table-contest/"&gt;Great looking data tables&lt;/a&gt;
 ]
 
-
----
-layout: false
-background-image: url(https://bookdown.org/yihui/blogdown/images/logo.png)
-background-position:80% 60%
-background-size: 300px 375px
-# Websites
-
-.pull-left[
-Making static webistes.
-- Personal-academic websites.
-- Websites for teaching.
-- Hosting resources.
-
-&lt;a href="http://chris-gaskell.com"&gt;My own site&lt;/a&gt;
-
-&lt;a href="http://sced-for-clinicians.netlify.app"&gt;DClinPsy teaching website for SCED&lt;/a&gt;
-]
-
-
----
-layout: false
-background-image: url(https://bookdown.org/yihui/bookdown/images/logo.png)
-background-position:80% 60%
-background-size: 300px 375px
-# Books
-
-.pull-left[
-- Books that are interactive, professional and interactive.
-- Able to output to html, msword or pdf.
-- Protocols and manuals?
-
-&lt;a href="https://bookdown.org/yihui/bookdown/"&gt;The Bookdown example&lt;/a&gt;
-
-&lt;a href="https://nead-gsh.netlify.app"&gt;An example book I made earlier for work&lt;/a&gt;
-]
-
-???
-- Looks just like an online book.
-- Sidebar contents table
-- Search function
-- Embded images, videos, tweets, downloadable files. 
 
 ---
 layout: false

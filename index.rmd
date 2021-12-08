@@ -1,9 +1,9 @@
 ---
 title: "R for Clinical Psychology: <br> Overview and applications"
-subtitle: "A showcase of how data science can help to drive digital healthcare"
+subtitle: "A showcase of how data science can help to develop health products"
 author:
 institute:
-date: "<br><br><br><br><br><br>Dr. Chris Gaskell<br>Clinical Psychologist<br>2021/19/12 (last updated: `r Sys.Date()`)"
+date: "<br><br><br><br><br><br>Dr. Chris Gaskell<br>Clinical Psychologist<br>2021/12/19 (last updated: `r Sys.Date()`)"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -76,8 +76,8 @@ name: about-me
 layout: false
 class: about-me-slide, right, middle, center
 background-image: url(img/salford.jpg)
-background-position:0% 50%
-background-size: 375px 100%
+background-position:-5% 50%
+background-size: 425px 100%
 
 
 <img style="border-radius: 50%;" src="https://pbs.twimg.com/profile_images/1434417640920002563/ZS62zhXl_400x400.jpg" width="200px"/>
@@ -210,24 +210,34 @@ class: center
 ---
 # Traditional research workflow
 
+.small[
 1. Dats stored in MS Excel <br>
 2. Get it into SPSS <br>
 3. Run some analayses <br>
 4. Extract results? (pray they are done right) <br>
 5. Write up in MS Word
+]
 
 Any problems with this?
-
 --
 
+.small[
 lack of integration?
-easy of refinemenet?
-transparency and reproducability?
-time to go back and repeat steps? limited functionality and flexibility?
+difficult to refine? <br>
+transparency and reproducability? <br>
+The time it takes to go back and repeat steps? <br>
+limited functionality and flexibility?
+]
+
+???
 
 R goes past this with literatre programming. Inregrated way to build reports.
 
 ---
+background-image: url(img/dont-use-spss.jpg)
+background-position:90% 50%
+background-size: 33% 35%
+
 # Reasons to use R
 
 + Statistics
@@ -255,7 +265,7 @@ background-size: 35% 85%
 
 .pull-left[
 - R offers a very different workflow.
-- Write the results the data is being analysed then hit run the report. If the data changes then the report will change too.
+- Write the results as the data is being analysed then hit run the report. If the data changes then the report will change too.
 - HTML is where it gets interesting.
 
 .footnote[.left[can all be shared using GitHub `r icons::fontawesome("github-square")`]]
@@ -282,9 +292,10 @@ background-size: 450px 300px, 450px 300px
 # Applications of R to digital healthcare
 
 - There is a need for improving how we share information.
-- greater quality of information.
-- products, resources, worksheets, teaching slides that people *actually* want to use.
 
+- greater quality of information.
+
+- Data products, resources, worksheets, teaching slides that people *actually* want to use.
 - R is a good fit because it can produce good quality html products without the need to be an expert in html
 
 ---
@@ -343,10 +354,10 @@ background-size: 350px 475px
 # Applications
 
 .left[
-## Shiny applications
 ## Presentations
 ## Books
 ## Websites
+## Shiny applications
 ## Automated Reports
 ]
 
@@ -359,18 +370,62 @@ background-size: 300px 375px
 
 .pull-left[
 - Lightweight (embed videos, gifs, large images).
-- No need to send files - host online. www.r-for-cp.netlify.app
+- No need to send files - host online.<br>
+<a href="www.r-for-cp.netlify.app">www.r-for-cp.netlify.app</a>
 
 
-<a href="http://fnd-for-paramedics.netlify.app">Some teaching I have done</a>
+<a href="http://fnd-for-paramedics.netlify.app">Some clinical teaching I have delivered about dissociative seizures.</a>
 
-<a href="http://chris-gaskell.github.io/uos-sced/day-one/index.html">And some more</a>
+<a href="http://chris-gaskell.github.io/uos-sced/day-one/index.html">Some academic teaching I have delivered about on conducting practice based research</a>
 ]
 
 ???
-- Search 
-- Embed videos, gifs and tweets
-- Use statistical and graphical outputs from R 
+- Scribble.
+- Webcam.
+- Panelset.
+
+---
+layout: false
+background-image: url(https://bookdown.org/yihui/blogdown/images/logo.png)
+background-position:80% 60%
+background-size: 300px 375px
+# Websites
+
+.pull-left[
+Making static webistes.
+- Personal-academic websites.
+- Websites for teaching staff and students.
+- Hosting resources.
+
+<a href="http://chris-gaskell.com">My personal site</a>
+
+<a href="http://sced-for-clinicians.netlify.app">Teaching workshop website</a>
+]
+
+
+---
+layout: false
+background-image: url(https://bookdown.org/yihui/bookdown/images/logo.png)
+background-position:80% 60%
+background-size: 300px 375px
+# Books
+
+.pull-left[
+- Books that are polished, professional and interactive.
+- Able to output to html, msword or pdf.
+- Protocols and treatment manuals.
+- Patient resources.
+
+<a href="https://bookdown.org/yihui/bookdown/">The Bookdown example</a>
+
+<a href="https://nead-gsh.netlify.app">An example book I made earlier for work</a>
+]
+
+???
+- Looks just like an online book.
+- Sidebar contents table
+- Search function
+- Embded images, videos, tweets, downloadable files. 
 
 ---
 layout: false
@@ -389,48 +444,6 @@ Making applications that are interactive and reactive
 - <a href="https://www.rstudio.com/blog/winners-of-the-2020-rstudio-table-contest/">Great looking data tables</a>
 ]
 
-
----
-layout: false
-background-image: url(https://bookdown.org/yihui/blogdown/images/logo.png)
-background-position:80% 60%
-background-size: 300px 375px
-# Websites
-
-.pull-left[
-Making static webistes.
-- Personal-academic websites.
-- Websites for teaching.
-- Hosting resources.
-
-<a href="http://chris-gaskell.com">My own site</a>
-
-<a href="http://sced-for-clinicians.netlify.app">DClinPsy teaching website for SCED</a>
-]
-
-
----
-layout: false
-background-image: url(https://bookdown.org/yihui/bookdown/images/logo.png)
-background-position:80% 60%
-background-size: 300px 375px
-# Books
-
-.pull-left[
-- Books that are interactive, professional and interactive.
-- Able to output to html, msword or pdf.
-- Protocols and manuals?
-
-<a href="https://bookdown.org/yihui/bookdown/">The Bookdown example</a>
-
-<a href="https://nead-gsh.netlify.app">An example book I made earlier for work</a>
-]
-
-???
-- Looks just like an online book.
-- Sidebar contents table
-- Search function
-- Embded images, videos, tweets, downloadable files. 
 
 ---
 layout: false
