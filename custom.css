@@ -23,6 +23,15 @@ svg:hover {
   width: 47%;
 }
 
+.pull-very-left {
+  float: left;
+  width: 62%;
+}
+.pull-very-right {
+  float: right;
+  width: 37%;
+}
+
 
 
 :root {

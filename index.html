@@ -24,7 +24,7 @@
     <meta property="og:type" content="website"/>
     <meta property="og:locale" content="en_US"/>
     <meta property="article:author" content="Chris Gaskell"/>
-    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"x3f99bba2eac419ea5fbb48b8bf51844","expires":14}</script>
+    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"xcd956d3537549a488f82ad36804e21a","expires":14}</script>
     <script src="libs/himalaya/himalaya.js"></script>
     <script src="libs/js-cookie/js.cookie.js"></script>
     <link href="libs/editable/editable.css" rel="stylesheet" />
@@ -165,7 +165,14 @@ class: left
 ```
 ]
 
+.footnote[
+&lt;a href="https://rdrr.io/snippets/"&gt;A place to give it a try&lt;/a&gt;
+]
+
 ---
+background-image: url(https://community.rstudio.com/uploads/default/original/2X/5/5f5367a9ede35b2ae26f62c9ccbb98ac279d4d34.gif)
+background-position: 100% 50%
+background-size: 300px 700px
 # The command line
 
 .pull-left[
@@ -177,7 +184,14 @@ test
 ```
 ]
 
+.footnote[
+&lt;a href="https://rdrr.io/snippets/"&gt;A place to give it a try&lt;/a&gt;
+]
+
 ---
+background-image: url(https://community.rstudio.com/uploads/default/original/2X/5/5f5367a9ede35b2ae26f62c9ccbb98ac279d4d34.gif)
+background-position: 100% 50%
+background-size: 300px 700px
 # Functions
 
 .pull-left[
@@ -190,12 +204,15 @@ round(3.14159, digits = 2)
 ## [1] 3.14
 ```
 
-.small[R has loads of functions built in.
-
-Also can be user defined.
-
-Groups of functions are held together within packages.
+.small[
+- R has loads of functions built in.
+- Also can be user defined.
+- Groups of functions are held together within packages.
 ]]
+
+.footnote[
+&lt;a href="https://rdrr.io/snippets/"&gt;A place to give it a try&lt;/a&gt;
+]
 
 ???
 - Infinate number of functions.
@@ -208,6 +225,31 @@ background-position:50% 95%
 background-size: 100% 80%
 class: center
 # A Universe of Packages
+---
+background-image: url(img/dont-use-spss.jpg)
+background-position:90% 50%
+background-size: 28% 40%
+
+# Reasons to use R
+
+.small[
++ Data analysis &amp; statistics
+  + Highest functionality, up to date and bug free
++ Data vizualisations (high quality)
++ Literate Programming
++ Data/web products
++ Open source
+  + Free
+  + Anyone code and contribute
+  + Transparency &amp; Replicability
+  
+And a supportive online community!
+]
+
+???
+- MLM; advanced meta-analyis; machine learning; 
+- Markdown is an accessible mark up language.
+
 ---
 # Traditional research workflow
 
@@ -234,28 +276,6 @@ limited functionality and flexibility?
 
 R goes past this with literatre programming. Inregrated way to build reports.
 
----
-background-image: url(img/dont-use-spss.jpg)
-background-position:90% 50%
-background-size: 33% 35%
-
-# Reasons to use R
-
-+ Statistics
-  + Highest functional capability.
-  + Up to date and bug free.
-+ .red[Sharing information]
-+ Free
-+ Open source
-  + Anyone can contribute
-  + Transparency
-  + Replicability
-+ Strong supportive community
-+ Literate Programming
-+ Share your work and collaborate.
-
-???
-- Markdown is an accessible mark up language.
 
 ---
 background-image: url(img/r-workflow.png)
@@ -264,12 +284,14 @@ background-size: 35% 85%
 
 # R Markdown workflow
 
-.pull-left[
+.pull-left[.small[
 - R offers a very different workflow.
-- Write the results as the data is being analysed then hit run the report. If the data changes then the report will change too.
+- Literate programming approach.
+  - Embed snippetes of code within a document (then hit run).
+  - If the original data changes then the report will change too.
 - HTML is where it gets interesting.
-
-.footnote[.left[can all be shared using GitHub &lt;svg viewBox="0 0 448 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM277.3 415.7c-8.4 1.5-11.5-3.7-11.5-8 0-5.4.2-33 .2-55.3 0-15.6-5.2-25.5-11.3-30.7 37-4.1 76-9.2 76-73.1 0-18.2-6.5-27.3-17.1-39 1.7-4.3 7.4-22-1.7-45-13.9-4.3-45.7 17.9-45.7 17.9-13.2-3.7-27.5-5.6-41.6-5.6-14.1 0-28.4 1.9-41.6 5.6 0 0-31.8-22.2-45.7-17.9-9.1 22.9-3.5 40.6-1.7 45-10.6 11.7-15.6 20.8-15.6 39 0 63.6 37.3 69 74.3 73.1-4.8 4.3-9.1 11.7-10.6 22.3-9.5 4.3-33.8 11.7-48.3-13.9-9.1-15.8-25.5-17.1-25.5-17.1-16.2-.2-1.1 10.2-1.1 10.2 10.8 5 18.4 24.2 18.4 24.2 9.7 29.7 56.1 19.7 56.1 19.7 0 13.9.2 36.5.2 40.6 0 4.3-3 9.5-11.5 8-66-22.1-112.2-84.9-112.2-158.3 0-91.8 70.2-161.5 162-161.5S388 165.6 388 257.4c.1 73.4-44.7 136.3-110.7 158.3zm-98.1-61.1c-1.9.4-3.7-.4-3.9-1.7-.2-1.5 1.1-2.8 3-3.2 1.9-.2 3.7.6 3.9 1.9.3 1.3-1 2.6-3 3zm-9.5-.9c0 1.3-1.5 2.4-3.5 2.4-2.2.2-3.7-.9-3.7-2.4 0-1.3 1.5-2.4 3.5-2.4 1.9-.2 3.7.9 3.7 2.4zm-13.7-1.1c-.4 1.3-2.4 1.9-4.1 1.3-1.9-.4-3.2-1.9-2.8-3.2.4-1.3 2.4-1.9 4.1-1.5 2 .6 3.3 2.1 2.8 3.4zm-12.3-5.4c-.9 1.1-2.8.9-4.3-.6-1.5-1.3-1.9-3.2-.9-4.1.9-1.1 2.8-.9 4.3.6 1.3 1.3 1.8 3.3.9 4.1zm-9.1-9.1c-.9.6-2.6 0-3.7-1.5s-1.1-3.2 0-3.9c1.1-.9 2.8-.2 3.7 1.3 1.1 1.5 1.1 3.3 0 4.1zm-6.5-9.7c-.9.9-2.4.4-3.5-.6-1.1-1.3-1.3-2.8-.4-3.5.9-.9 2.4-.4 3.5.6 1.1 1.3 1.3 2.8.4 3.5zm-6.7-7.4c-.4.9-1.7 1.1-2.8.4-1.3-.6-1.9-1.7-1.5-2.6.4-.6 1.5-.9 2.8-.4 1.3.7 1.9 1.8 1.5 2.6z"&gt;&lt;/path&gt;&lt;/svg&gt;]]
+]
+.footnote[.left[Can all be shared using GitHub &lt;svg viewBox="0 0 448 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM277.3 415.7c-8.4 1.5-11.5-3.7-11.5-8 0-5.4.2-33 .2-55.3 0-15.6-5.2-25.5-11.3-30.7 37-4.1 76-9.2 76-73.1 0-18.2-6.5-27.3-17.1-39 1.7-4.3 7.4-22-1.7-45-13.9-4.3-45.7 17.9-45.7 17.9-13.2-3.7-27.5-5.6-41.6-5.6-14.1 0-28.4 1.9-41.6 5.6 0 0-31.8-22.2-45.7-17.9-9.1 22.9-3.5 40.6-1.7 45-10.6 11.7-15.6 20.8-15.6 39 0 63.6 37.3 69 74.3 73.1-4.8 4.3-9.1 11.7-10.6 22.3-9.5 4.3-33.8 11.7-48.3-13.9-9.1-15.8-25.5-17.1-25.5-17.1-16.2-.2-1.1 10.2-1.1 10.2 10.8 5 18.4 24.2 18.4 24.2 9.7 29.7 56.1 19.7 56.1 19.7 0 13.9.2 36.5.2 40.6 0 4.3-3 9.5-11.5 8-66-22.1-112.2-84.9-112.2-158.3 0-91.8 70.2-161.5 162-161.5S388 165.6 388 257.4c.1 73.4-44.7 136.3-110.7 158.3zm-98.1-61.1c-1.9.4-3.7-.4-3.9-1.7-.2-1.5 1.1-2.8 3-3.2 1.9-.2 3.7.6 3.9 1.9.3 1.3-1 2.6-3 3zm-9.5-.9c0 1.3-1.5 2.4-3.5 2.4-2.2.2-3.7-.9-3.7-2.4 0-1.3 1.5-2.4 3.5-2.4 1.9-.2 3.7.9 3.7 2.4zm-13.7-1.1c-.4 1.3-2.4 1.9-4.1 1.3-1.9-.4-3.2-1.9-2.8-3.2.4-1.3 2.4-1.9 4.1-1.5 2 .6 3.3 2.1 2.8 3.4zm-12.3-5.4c-.9 1.1-2.8.9-4.3-.6-1.5-1.3-1.9-3.2-.9-4.1.9-1.1 2.8-.9 4.3.6 1.3 1.3 1.8 3.3.9 4.1zm-9.1-9.1c-.9.6-2.6 0-3.7-1.5s-1.1-3.2 0-3.9c1.1-.9 2.8-.2 3.7 1.3 1.1 1.5 1.1 3.3 0 4.1zm-6.5-9.7c-.9.9-2.4.4-3.5-.6-1.1-1.3-1.3-2.8-.4-3.5.9-.9 2.4-.4 3.5.6 1.1 1.3 1.3 2.8.4 3.5zm-6.7-7.4c-.4.9-1.7 1.1-2.8.4-1.3-.6-1.9-1.7-1.5-2.6.4-.6 1.5-.9 2.8-.4 1.3.7 1.9 1.8 1.5 2.6z"&gt;&lt;/path&gt;&lt;/svg&gt;]]
 ]
 
 ???
@@ -294,10 +316,14 @@ background-size: 450px 300px, 450px 300px
 
 - There is a need for improving how we share information.
 
-- greater quality of information.
+- Greater quality of information.
 
 - Data products, resources, worksheets, teaching slides that people *actually* want to use.
 - R is a good fit because it can produce good quality html products without the need to be an expert in html
+
+???
+- Traditionally, this is out the skillset set of a psychologist. But as the digital landscape is developing there is an increasing need to bring it into our thinking, and perhaps remit. NHS mental health service often lack the infrastructure or expertise to think in this way.
+- Psychologists need to start considering innovation around digital delivery because the people in management, who should be thinking about this, wont. 
 
 ---
 background-image: url(https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1170&amp;q=80)
@@ -318,7 +344,7 @@ background-size: 300px 375px
 # Embed Tweets
 
 .pull-left[
-<blockquote class="twitter-tweet" data-width="550" data-lang="en" data-dnt="true" data-theme="light"><p lang="en" dir="ltr">People living with FND/NEAD + FND clinicians of all specialities.<br><br>I&#39;m happily redesigning a half-day teaching package for trainee paramedics on the important, broad area of FND/NEAD.<br><br>I kindly ask for any suggestions on what you feel paramedics ought to know re: FND🙂.<br>Please RT <a href="https://t.co/n92DC4ykG7">pic.twitter.com/n92DC4ykG7</a></p>&mdash; Chris Gaskell (@chrisgaskell92) <a href="https://twitter.com/chrisgaskell92/status/1422124260844138501?ref_src=twsrc%5Etfw">August 2, 2021</a></blockquote>
+<blockquote class="twitter-tweet" data-width="550" data-lang="en" data-dnt="true" data-theme="light"><p lang="en" dir="ltr">Really exciting developments! We are now able to provide fostering-specific norms and more detailed reports through BERRI to better support foster carers, fostering agencies and local authorities to identify and meet the psychological needs of the children in their care <a href="https://t.co/rYliPjgUyh">https://t.co/rYliPjgUyh</a></p>&mdash; BERRI - Outcome Measure (@BerriPrime) <a href="https://twitter.com/BerriPrime/status/1466732253304832004?ref_src=twsrc%5Etfw">December 3, 2021</a></blockquote>
 
 ]
 
@@ -331,7 +357,7 @@ background-size: 550px 475px
 .pull-left[
 <div class="vembedr">
 <div>
-<iframe src="https://www.youtube.com/embed/Dy3XLo7dVQI?start=4" width="400" height="450" frameborder="0" allowfullscreen=""></iframe>
+<iframe src="https://www.youtube.com/embed/9kYUGMg_14s?start=4" width="400" height="450" frameborder="0" allowfullscreen=""></iframe>
 </div>
 </div>
 ]
@@ -339,14 +365,14 @@ background-size: 550px 475px
 ---
 background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPztLhdWyflhRN2oWtTcaed0ogJHi13LGLAA&amp;usqp=CAU), url(https://boostlabs.com/wp-content/uploads/2019/09/10-types-of-data-visualization-1.jpg)
 background-position:10% 70%, 90% 70%
-background-size: 470px 350px, 470px 350px
+background-size: 525px 400px, 525px 400px
 
 # Great data visualization!
 
 ---
 background-image: url(http://blog.revolutionanalytics.com/downloads/datasaurus.gif), url(https://miro.medium.com/max/1400/1*t1dFLWRii-oeKSY_DbuU9A.gif)
 background-position:10% 70%, 90% 70%
-background-size: 470px 350px, 470px 350px
+background-size: 525px 400px, 525px 400px
 
 # Which can even me animated
 
@@ -358,29 +384,34 @@ background-size: 350px 475px
 # Applications
 
 .left[
-## Presentations
-## Books
-## Websites
-## Shiny applications
-## Automated Reports
-]
+.large[
+- Presentations
+
+- Books
+
+- Websites
+
+- Shiny applications
+
+- Automated Reports
+]]
 
 ---
 layout: false
 background-image: url(https://user-images.githubusercontent.com/163582/45438104-ea200600-b67b-11e8-80fa-d9f2a99a03b0.png)
-background-position:80% 60%
+background-position:85% 60%
 background-size: 300px 375px
 # Presentations
 
-.pull-left[
-- Lightweight (embed videos, gifs, large images).
-- No need to send files - host online.&lt;br&gt;
+.pull-very-left[
+- Lightweight (embed videos, gifs, HD imgs).
+- Host online (No need to send files). &lt;br&gt;
 &lt;a href="www.r-for-cp.netlify.app"&gt;www.r-for-cp.netlify.app&lt;/a&gt;
 
 
-&lt;a href="http://fnd-for-paramedics.netlify.app"&gt;Some clinical teaching I have delivered about dissociative seizures.&lt;/a&gt;
+&lt;a href="http://fnd-for-paramedics.netlify.app"&gt; Clinical teaching about dissociative seizures&lt;/a&gt;
 
-&lt;a href="http://chris-gaskell.github.io/uos-sced/day-one/index.html"&gt;Some academic teaching I have delivered about on conducting practice based research&lt;/a&gt;
+&lt;a href="http://chris-gaskell.github.io/uos-sced/day-one/index.html"&gt; Academic teaching about practice based research&lt;/a&gt;
 ]
 
 ???
@@ -391,13 +422,13 @@ background-size: 300px 375px
 ---
 layout: false
 background-image: url(https://bookdown.org/yihui/blogdown/images/logo.png)
-background-position:80% 60%
+background-position:85% 60%
 background-size: 300px 375px
 # Websites
 
-.pull-left[
-Making static webistes.
-- Personal-academic websites.
+.pull-very-left[
+Static webistes:
+- Personal academic websites.
 - Websites for teaching staff and students.
 - Hosting resources.
 
@@ -410,15 +441,16 @@ Making static webistes.
 ---
 layout: false
 background-image: url(https://bookdown.org/yihui/bookdown/images/logo.png)
-background-position:80% 60%
+background-position:85% 60%
 background-size: 300px 375px
-# Books
+# E-Books
 
-.pull-left[
-- Books that are polished, professional and interactive.
-- Able to output to html, msword or pdf.
-- Protocols and treatment manuals.
-- Patient resources.
+.pull-very-left[
+Books that are: &lt;br&gt;
+- Polished, professional and interactive
+- Can output to html, MsWord or pdf
+- Protocols &amp; treatment manuals
+- Patient workbooks &amp; resources.
 
 &lt;a href="https://bookdown.org/yihui/bookdown/"&gt;The Bookdown example&lt;/a&gt;
 
@@ -434,12 +466,12 @@ background-size: 300px 375px
 ---
 layout: false
 background-image: url(https://blog.efpsa.org/wp-content/uploads/2019/04/pic1.png)
-background-position:80% 60%
+background-position:85% 60%
 background-size: 300px 375px
 # Applications
 
-.pull-left[
-Making applications that are interactive and reactive
+.pull-very-left[
+Apps that are interactive and reactive:
 
 - &lt;a href="http://neuro-tests.netlify.app"&gt;Neuropsychology Test Catalogue&lt;/a&gt;
 
@@ -448,11 +480,10 @@ Making applications that are interactive and reactive
 - &lt;a href="https://www.rstudio.com/blog/winners-of-the-2020-rstudio-table-contest/"&gt;Great looking data tables&lt;/a&gt;
 ]
 
-
 ---
 layout: false
 background-image: url(https://i.pinimg.com/originals/d6/4f/60/d64f60c95354b0ae5fb447ff942eb20b.png)
-background-position:80% 60%
+background-position:85% 60%
 background-size: 300px 375px
 # Academic Posters
     </textarea>

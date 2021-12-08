@@ -168,7 +168,14 @@ class: left
 ```
 ]
 
+.footnote[
+<a href="https://rdrr.io/snippets/">A place to give it a try</a>
+]
+
 ---
+background-image: url(https://community.rstudio.com/uploads/default/original/2X/5/5f5367a9ede35b2ae26f62c9ccbb98ac279d4d34.gif)
+background-position: 100% 50%
+background-size: 300px 700px
 # The command line
 
 .pull-left[
@@ -178,7 +185,14 @@ test
 ```
 ]
 
+.footnote[
+<a href="https://rdrr.io/snippets/">A place to give it a try</a>
+]
+
 ---
+background-image: url(https://community.rstudio.com/uploads/default/original/2X/5/5f5367a9ede35b2ae26f62c9ccbb98ac279d4d34.gif)
+background-position: 100% 50%
+background-size: 300px 700px
 # Functions
 
 .pull-left[
@@ -189,12 +203,15 @@ round(3.14159, digits = 2)
 
 ```
 
-.small[R has loads of functions built in.
-
-Also can be user defined.
-
-Groups of functions are held together within packages.
+.small[
+- R has loads of functions built in.
+- Also can be user defined.
+- Groups of functions are held together within packages.
 ]]
+
+.footnote[
+<a href="https://rdrr.io/snippets/">A place to give it a try</a>
+]
 
 ???
 - Infinate number of functions.
@@ -207,6 +224,31 @@ background-position:50% 95%
 background-size: 100% 80%
 class: center
 # A Universe of Packages
+---
+background-image: url(img/dont-use-spss.jpg)
+background-position:90% 50%
+background-size: 28% 40%
+
+# Reasons to use R
+
+.small[
++ Data analysis & statistics
+  + Highest functionality, up to date and bug free
++ Data vizualisations (high quality)
++ Literate Programming
++ Data/web products
++ Open source
+  + Free
+  + Anyone code and contribute
+  + Transparency & Replicability
+  
+And a supportive online community!
+]
+
+???
+- MLM; advanced meta-analyis; machine learning; 
+- Markdown is an accessible mark up language.
+
 ---
 # Traditional research workflow
 
@@ -233,28 +275,6 @@ limited functionality and flexibility?
 
 R goes past this with literatre programming. Inregrated way to build reports.
 
----
-background-image: url(img/dont-use-spss.jpg)
-background-position:90% 50%
-background-size: 33% 35%
-
-# Reasons to use R
-
-+ Statistics
-  + Highest functional capability.
-  + Up to date and bug free.
-+ .red[Sharing information]
-+ Free
-+ Open source
-  + Anyone can contribute
-  + Transparency
-  + Replicability
-+ Strong supportive community
-+ Literate Programming
-+ Share your work and collaborate.
-
-???
-- Markdown is an accessible mark up language.
 
 ---
 background-image: url(img/r-workflow.png)
@@ -263,12 +283,14 @@ background-size: 35% 85%
 
 # R Markdown workflow
 
-.pull-left[
+.pull-left[.small[
 - R offers a very different workflow.
-- Write the results as the data is being analysed then hit run the report. If the data changes then the report will change too.
+- Literate programming approach.
+  - Embed snippetes of code within a document (then hit run).
+  - If the original data changes then the report will change too.
 - HTML is where it gets interesting.
-
-.footnote[.left[can all be shared using GitHub `r icons::fontawesome("github-square")`]]
+]
+.footnote[.left[Can all be shared using GitHub `r icons::fontawesome("github-square")`]]
 ]
 
 ???
@@ -293,10 +315,14 @@ background-size: 450px 300px, 450px 300px
 
 - There is a need for improving how we share information.
 
-- greater quality of information.
+- Greater quality of information.
 
 - Data products, resources, worksheets, teaching slides that people *actually* want to use.
 - R is a good fit because it can produce good quality html products without the need to be an expert in html
+
+???
+- Traditionally, this is out the skillset set of a psychologist. But as the digital landscape is developing there is an increasing need to bring it into our thinking, and perhaps remit. NHS mental health service often lack the infrastructure or expertise to think in this way.
+- Psychologists need to start considering innovation around digital delivery because the people in management, who should be thinking about this, wont. 
 
 ---
 background-image: url(https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)
@@ -318,7 +344,7 @@ background-size: 300px 375px
 
 .pull-left[
 ```{r echo=F}
-tweetrmd::tweet_embed(tweetrmd::tweet_url("chrisgaskell92", "1422124260844138501"), theme = "light", maxwidth = 700)
+tweetrmd::tweet_embed(tweetrmd::tweet_url("chrisgaskell92", "1466732253304832004"), theme = "light", maxwidth = 700)
 ```
 ]
 
@@ -329,20 +355,20 @@ background-size: 550px 475px
 # Embed Videos & Gifs
 
 .pull-left[
-`r embed_youtube("Dy3XLo7dVQI", width = 400, height = 450) %>% use_start_time("0m04s")`
+`r embed_youtube("9kYUGMg_14s", width = 400, height = 450) %>% use_start_time("0m04s")`
 ]
 
 ---
 background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPztLhdWyflhRN2oWtTcaed0ogJHi13LGLAA&usqp=CAU), url(https://boostlabs.com/wp-content/uploads/2019/09/10-types-of-data-visualization-1.jpg)
 background-position:10% 70%, 90% 70%
-background-size: 470px 350px, 470px 350px
+background-size: 525px 400px, 525px 400px
 
 # Great data visualization!
 
 ---
 background-image: url(http://blog.revolutionanalytics.com/downloads/datasaurus.gif), url(https://miro.medium.com/max/1400/1*t1dFLWRii-oeKSY_DbuU9A.gif)
 background-position:10% 70%, 90% 70%
-background-size: 470px 350px, 470px 350px
+background-size: 525px 400px, 525px 400px
 
 # Which can even me animated
 
@@ -354,29 +380,34 @@ background-size: 350px 475px
 # Applications
 
 .left[
-## Presentations
-## Books
-## Websites
-## Shiny applications
-## Automated Reports
-]
+.large[
+- Presentations
+
+- Books
+
+- Websites
+
+- Shiny applications
+
+- Automated Reports
+]]
 
 ---
 layout: false
 background-image: url(https://user-images.githubusercontent.com/163582/45438104-ea200600-b67b-11e8-80fa-d9f2a99a03b0.png)
-background-position:80% 60%
+background-position:85% 60%
 background-size: 300px 375px
 # Presentations
 
-.pull-left[
-- Lightweight (embed videos, gifs, large images).
-- No need to send files - host online.<br>
+.pull-very-left[
+- Lightweight (embed videos, gifs, HD imgs).
+- Host online (No need to send files). <br>
 <a href="www.r-for-cp.netlify.app">www.r-for-cp.netlify.app</a>
 
 
-<a href="http://fnd-for-paramedics.netlify.app">Some clinical teaching I have delivered about dissociative seizures.</a>
+<a href="http://fnd-for-paramedics.netlify.app"> Clinical teaching about dissociative seizures</a>
 
-<a href="http://chris-gaskell.github.io/uos-sced/day-one/index.html">Some academic teaching I have delivered about on conducting practice based research</a>
+<a href="http://chris-gaskell.github.io/uos-sced/day-one/index.html"> Academic teaching about practice based research</a>
 ]
 
 ???
@@ -387,13 +418,13 @@ background-size: 300px 375px
 ---
 layout: false
 background-image: url(https://bookdown.org/yihui/blogdown/images/logo.png)
-background-position:80% 60%
+background-position:85% 60%
 background-size: 300px 375px
 # Websites
 
-.pull-left[
-Making static webistes.
-- Personal-academic websites.
+.pull-very-left[
+Static webistes:
+- Personal academic websites.
 - Websites for teaching staff and students.
 - Hosting resources.
 
@@ -406,15 +437,16 @@ Making static webistes.
 ---
 layout: false
 background-image: url(https://bookdown.org/yihui/bookdown/images/logo.png)
-background-position:80% 60%
+background-position:85% 60%
 background-size: 300px 375px
-# Books
+# E-Books
 
-.pull-left[
-- Books that are polished, professional and interactive.
-- Able to output to html, msword or pdf.
-- Protocols and treatment manuals.
-- Patient resources.
+.pull-very-left[
+Books that are: <br>
+- Polished, professional and interactive
+- Can output to html, MsWord or pdf
+- Protocols & treatment manuals
+- Patient workbooks & resources.
 
 <a href="https://bookdown.org/yihui/bookdown/">The Bookdown example</a>
 
@@ -430,12 +462,12 @@ background-size: 300px 375px
 ---
 layout: false
 background-image: url(https://blog.efpsa.org/wp-content/uploads/2019/04/pic1.png)
-background-position:80% 60%
+background-position:85% 60%
 background-size: 300px 375px
 # Applications
 
-.pull-left[
-Making applications that are interactive and reactive
+.pull-very-left[
+Apps that are interactive and reactive:
 
 - <a href="http://neuro-tests.netlify.app">Neuropsychology Test Catalogue</a>
 
@@ -444,10 +476,9 @@ Making applications that are interactive and reactive
 - <a href="https://www.rstudio.com/blog/winners-of-the-2020-rstudio-table-contest/">Great looking data tables</a>
 ]
 
-
 ---
 layout: false
 background-image: url(https://i.pinimg.com/originals/d6/4f/60/d64f60c95354b0ae5fb447ff942eb20b.png)
-background-position:80% 60%
+background-position:85% 60%
 background-size: 300px 375px
 # Academic Posters
