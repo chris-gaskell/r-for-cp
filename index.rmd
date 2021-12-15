@@ -1,9 +1,9 @@
 ---
 title: "R for Clinical Psychology: <br> Overview and applications"
-subtitle: "A showcase of how data science can help to develop health products"
+subtitle: "A showcase of how data science can help to develop digital health products"
 author:
 institute:
-date: "<br><br><br><br><br><br>Dr. Chris Gaskell<br>Clinical Psychologist<br>2021/12/19 (last updated: `r Sys.Date()`)"
+date: "<br><br><br><br><br><br>Dr. Chris Gaskell<br>Clinical Psychologist<br>2021/12/16 (last updated: `r Sys.Date()`)"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -88,11 +88,15 @@ background-size: 425px 100%
 
 .fade[Non-Epileptic Attack Disorder Service<br>Northern Care Alliance NHS Foundation Trust<br>Manchester, UK]
 
-.small[
+.small[.small[
 [`r icons::fontawesome("link")` chris-gaskell.com](https://chris-gaskell.com)
 [`r icons::fontawesome("twitter")` @chris-gaskell92](https://twitter.com/chris-gaskell92)
 [`r icons::icon_style(icons::fontawesome("github"), scale = 1)` @chris-gaskell](https://github.com/chris-gaskell)
-]
+]]
+
+???
+- Introduction
+- How I got into this.
 
 ---
 exclude: true
@@ -172,6 +176,11 @@ class: left
 <a href="https://rdrr.io/snippets/">A place to give it a try</a>
 ]
 
+???
+- A fancy calculator (like spss)
+- key differances is script files (syntax). 
+  - transparency
+  - reproducability
 ---
 background-image: url(https://community.rstudio.com/uploads/default/original/2X/5/5f5367a9ede35b2ae26f62c9ccbb98ac279d4d34.gif)
 background-position: 100% 50%
@@ -188,6 +197,15 @@ test
 .footnote[
 <a href="https://rdrr.io/snippets/">A place to give it a try</a>
 ]
+
+???
+- use website to demonstrate functions
+  - sqrt
+  - round
+- Functions become more sophisticated
+- User definable
+- tricky (no GUI) but highly flexible because of arguments
+- SPSS is less flexible and there is less available for paper trail.
 
 ---
 background-image: url(https://community.rstudio.com/uploads/default/original/2X/5/5f5367a9ede35b2ae26f62c9ccbb98ac279d4d34.gif)
@@ -246,7 +264,8 @@ And a supportive online community!
 ]
 
 ???
-- MLM; advanced meta-analyis; machine learning; 
+- MLM; advanced meta-analyis; machine learning;
+- Visualiasation is where R really came to the table.
 - Markdown is an accessible mark up language.
 
 ---
@@ -295,30 +314,65 @@ background-size: 35% 85%
 
 ???
 - Don't need to know much html or css. R Markdown is a simple markup language that can handle them both but requires little of either. Packages also do a lot of the work for us.
+- Literate programming
+- Meta-analysis
 
 ---
+background-image: url(https://media.istockphoto.com/photos/industry-40-businessman-touching-brain-in-cogwheel-innovative-and-picture-id1274417553?b=1&k=20&m=1274417553&s=170667a&w=0&h=SO3FH-H-BXbp_gBIvtqk8NjrmITM-kKBjbpclmQfKjc=)
+background-position: cover
+background-size: cover
+class: inverse, bottom, right
+
+# .Large[.my-hot-blue[Data products]]
+
+???
+- Second part of presentation - data products
+- Relevance for CP
+---
 background-image: url(img/gsh.png), url(img/teletherapy.jpg)
-background-position:20% 70%, 80% 70%
-background-size: 450px 300px, 450px 300px
+background-position:98% 35%, 98% 80%
+background-size: 400px 175px, 400px 200px
 
 # Is the product of psychological therapy changing?
 
-???
+.pull-very-left[
+CP delivery has needed to change:
+1. Evidence based practice
+1. Digital innovations
+1. COVID-19
 
-- Delivery methods are changing
-- Bigger role of different intervention formats
-- Quality of resources are still terrible
+Issues that remain:
+1. High demand
+1. Acceptability
+]
+
+???
+- EBP: Protocols, Standardisations
+- Digital innovations: therapy Apps
+- Delivery: teleconferencing through covid 19
+- A good thing. Effective. Needed. Particularly 1:1.
+  - However there will never be enough CPs
+  - there will always be people who dont want to see one.
+  - Need to consider more innovative ways to make acceptable interventions that can be easily cascaded.
+
+- Bigger role of different intervention formats (GSH, bibliotherapy, apps, websites, resources)
+- Quality of resources and handouts in NHS are terrible!
 
 ---
 
 # Applications of R to digital healthcare
 
-- There is a need for improving how we share information.
+.small[
+- There is a need for improving how we cascade information/intervention (both for research and clinical purpposes).
 
 - Greater quality of information.
 
-- Data products, resources, worksheets, teaching slides that people *actually* want to use.
+- Data products, resources, worksheets, teaching slides that people **actually** want to use.
+
 - R is a good fit because it can produce good quality html products without the need to be an expert in html
+
+- html is flexible, accessible and lightweight
+]
 
 ???
 - Traditionally, this is out the skillset set of a psychologist. But as the digital landscape is developing there is an increasing need to bring it into our thinking, and perhaps remit. NHS mental health service often lack the infrastructure or expertise to think in this way.
@@ -341,7 +395,7 @@ layout: false
 # Embed Tweets
 
 ```{r echo=F}
-tweetrmd::tweet_embed(tweetrmd::tweet_url("chrisgaskell92", "1466732253304832004"), theme = "light", maxwidth = 700)
+tweetrmd::tweet_embed(tweetrmd::tweet_url("chrisgaskell92", "1466732253304832004"), theme = "light", maxwidth = 1000)
 ```
 
 
@@ -411,6 +465,9 @@ background-size: 300px 375px
 - Scribble.
 - Webcam.
 - Panelset.
+- Videos
+- contact cards
+- 
 
 ---
 layout: false
@@ -425,9 +482,12 @@ Static webistes:
 - Websites for teaching staff and students.
 - Hosting resources.
 
-<a href="http://chris-gaskell.com">My personal site</a>
+<a href="https://leo-the-lurcher.netlify.app">My dog's website (bit of fun)</a>
 
 <a href="http://sced-for-clinicians.netlify.app">Teaching workshop website</a>
+
+<a href="http://chris-gaskell.com">My personal site</a>
+
 ]
 
 
@@ -443,7 +503,7 @@ Books that are: <br>
 - Polished, professional and interactive
 - Can output to html, MsWord or pdf
 - Protocols & treatment manuals
-- Patient workbooks & resources.
+- Workbooks & resources for carers and patients.
 
 <a href="https://bookdown.org/yihui/bookdown/">The Bookdown example</a>
 
@@ -479,3 +539,7 @@ background-image: url(https://i.pinimg.com/originals/d6/4f/60/d64f60c95354b0ae5f
 background-position:85% 60%
 background-size: 300px 375px
 # Academic Posters
+
+---
+background-image: url(https://images.unsplash.com/photo-1584890280660-9322ee35baf1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1134&q=80)
+background-size: cover
