@@ -20,7 +20,7 @@ output:
       highlightLines: true
       countIncrementalSlides: false
 ---
-```{r meta, echo=FALSE}
+```{r echo=FALSE}
 library(metathis)
 meta() %>%
   meta_general(
@@ -43,6 +43,7 @@ meta() %>%
     twitter_creator = "@cgaskell92"
   )
 ```
+
 ```{r setup, include=FALSE}
 library(knitr)
 # set default options
@@ -72,6 +73,8 @@ xaringanExtra::use_scribble()
 xaringanExtra::use_logo(image_url = "https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/xaringan.png")
 xaringanExtra::use_share_again()
 ```
+
+
 name: about-me
 layout: false
 class: about-me-slide, right, middle, center
