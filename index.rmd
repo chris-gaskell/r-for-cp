@@ -31,7 +31,7 @@ meta() %>%
   meta_social(
     title = "R for Clinical Psychology",
     url = "https://chris-gaskell.github.io.r/for-cp/index.html",
-    image = "https://github.com/chris-gaskell/r-for-cp/blob/main/sharing.png?raw=true",
+    image = "https://github.com/chris-gaskell/r-for-cp/blob/main/share-card.png?raw=true",
     image_alt = paste(
       "Title slide of R for Clinical Psychology:",
       "An Introduction to R in Clinical Psychology: Tools for innovation",
